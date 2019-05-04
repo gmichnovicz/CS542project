@@ -154,10 +154,10 @@ def parse_args():
   remark: layers are manually initialized for clarity.
 '''
 
-def build_model(input_img):
+def build_model(input_sound):
   if args.verbose: print('\nBUILDING VGG-19 NETWORK')
   net = {}
-  _, h, w, d     = input_img.shape
+  #_, h, w, d     = input_img.shape
   
   if args.verbose: print('loading model weights...')
   vgg_rawnet     = scipy.io.loadmat(args.model_weights)
@@ -165,6 +165,9 @@ def build_model(input_img):
   if args.verbose: print('constructing layers...')
   net['input']   = tf.Variable(np.zeros((1, h, w, d), dtype=np.float32))
 
+
+#def conv_layer(layer_name, layer_input, W):
+#def relu_layer(layer_name, layer_input, b):
   if args.verbose: print('LAYER GROUP 1')
   net['conv1_1'] = conv_layer('conv1_1', net['input'], W=get_weights(vgg_layers, 0))
   net['relu1_1'] = relu_layer('relu1_1', net['conv1_1'], b=get_bias(vgg_layers, 0))
