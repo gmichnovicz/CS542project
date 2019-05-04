@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np 
 import scipy.io.wavfile as wav 
+import librosa
 import argparse 
 import time                       
 import os
@@ -14,30 +15,51 @@ class AudioSignal():
         self.styleFile = style
 
     def createSpectrogram(self):
-        FsCont, yCont = wav.read(self.contentFile)
-        FsSty, ySty = wav.read(self.styleFile)
+        # FsCont, yCont = wav.read(self.contentFile)
+        # FsSty, ySty = wav.read(self.styleFile)
 
-        self.num_samples = yCont.shape[0]
-        try:
-            self.num_channels = yCont.shape[1]
-        except:
-            self.num_channels = 1
+        # self.num_samples = yCont.shape[0]
+        # try:
+        #     self.num_channels = yCont.shape[1]
+        # except:
+        #     self.num_channels = 1
         
 
-        self.contentSR = FsCont
-        self.styleSR = FsSty
+        # self.contentSR = FsCont
+        # self.styleSR = FsSty
     
-        fC, tC, ZxxContent = signal.stft(yCont,fs=FsCont, nfft=2048)
-        fS, tS, ZxxStyle = signal.stft(ySty,fs=FsSty, nfft=2048) #potentially change fs to FsCont
+        # fC, tC, ZxxContent = signal.stft(yCont,fs=FsCont, nfft=2048)
+        # fS, tS, ZxxStyle = signal.stft(ySty,fs=FsSty, nfft=2048) #potentially change fs to FsCont
         
-        preC1 = np.angle(ZxxContent)
-        preC2 = np.log1p(np.abs(preC1))
+        # preC1 = np.angle(ZxxContent)
+        # preC2 = np.log1p(np.abs(preC1))
         
-        preS1 = np.angle(ZxxStyle)
-        preS2 = np.log1p(np.abs(preS1))
+        # preS1 = np.angle(ZxxStyle)
+        # preS2 = np.log1p(np.abs(preS1))
 
-        self.contentSpec = preC2
-        self.styleSpec = preS2[:self.num_channels, :self.num_samples]
+        # self.contentSpec = preC2
+        # self.styleSpec = preS2[:self.num_channels, :self.num_samples]
+        N_FFT = 2048
+
+        yCont, FScont = librosa.load(self.contentFile)
+        ySty, FSsty = librosa.load(self.styleFile)
+
+        contS = librosa.stft(yCont,N_FFT)
+        styS = librosa.stft(ySty,N_FFT)
+
+        contS = np.log1p(np.abs(contS))
+        styS = np.log1p(np.abs(styS))
+
+        self.num_channels = contS.shape[0]
+        self.num_samples = contS.shape[1]
+
+        self.contentSR = FScont
+        self.styleSR = FSsty
+
+        self.contentSpec = contS
+        self.styleSpec = styS[:self.num_channels, :self.num_samples]
+
+
 
     def initSignal(self,typ):
         if typ == 'content':
