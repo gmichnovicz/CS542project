@@ -1,4 +1,4 @@
-##Necessary dependancy installation for the SCC:
+##Necessary dependancy installation for the SCC:##
 
 **module load python/2.7.12**
 
