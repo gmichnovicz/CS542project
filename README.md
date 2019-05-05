@@ -1,10 +1,12 @@
-Python 2.7.12
+##Necessary dependancy installation for the SCC:
 
-Tensor flow r1.10
+**module load python/2.7.12**
 
-cuda 8.0
+**module load tensorflow/r1.10**
 
-Opencv 2.4.13
+**module load cuda/8.0**
 
-wget http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
+**module load ffmpeg**
+
+**For pre-trained VGG: wget http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat** - file not in git repository for size constraints.
 
