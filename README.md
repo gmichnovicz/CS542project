@@ -24,7 +24,7 @@ Please note that measuring the meaningfulness of our results (accuracy of our al
 
 | **Content**  | **Style** | **Result** |
 | :---:      |     :---:   |   :---:   |        
-| ![`male-voice`](https://soundcloud.com/arezoo-sadeghi-923021116/malevoice)   | [`Mandarinfemalevoice`](https://soundcloud.com/arezoo-sadeghi-923021116/mandarinfemalevoice)  | [`female-male-voice`](https://soundcloud.com/arezoo-sadeghi-923021116/result-piano-female-2) | 
+| [`male-voice`](https://soundcloud.com/arezoo-sadeghi-923021116/malevoice)   | [`Mandarinfemalevoice`](https://soundcloud.com/arezoo-sadeghi-923021116/mandarinfemalevoice)  | [`female-male-voice`](https://soundcloud.com/arezoo-sadeghi-923021116/result-piano-female-2) | 
 | [`Valkyries`](https://soundcloud.com/arezoo-sadeghi-923021116/valkyries) | [`usa-national-antheme`](https://soundcloud.com/arezoo-sadeghi-923021116/national-anthem-of-the-united-states-1) | [`usa-valk`](https://soundcloud.com/arezoo-sadeghi-923021116/result-usa-valk-3) |
 | [`Biritish-female-voice`](https://soundcloud.com/arezoo-sadeghi-923021116/04a-1)  | [`keyboard`](https://soundcloud.com/arezoo-sadeghi-923021116/keyboard) | [`keyboard-female-voice`](https://soundcloud.com/arezoo-sadeghi-923021116/result-keyb-female-3) |
 | [`piano`](https://soundcloud.com/arezoo-sadeghi-923021116/piano-song)  | [`Biritish-female-voice`](https://soundcloud.com/arezoo-sadeghi-923021116/04a-1)  | [`Biritish-female-piano`](https://soundcloud.com/arezoo-sadeghi-923021116/result-female-piano-2) |
