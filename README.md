@@ -35,7 +35,6 @@ Please note that measuring the meaningfulness of our results (accuracy of our al
 # Figure of result
 
 ![Figure 1]
-
 (https://github.com/gmichnovicz/CS542project/blob/master/figures/figure.png)
 
 
