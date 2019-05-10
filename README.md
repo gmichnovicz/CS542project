@@ -34,7 +34,9 @@ Please note that measuring the meaningfulness of our results (accuracy of our al
 
 # Figure of result
 
-![Figure 1](figures/figure.png)
+![Figure 1 - Shallow Untrained Model](figures/figure.png)
+
+![Figure 2 - VGG Model Results](figures/figurevggfinal.png)
 
 
 ----------------------------------------------------------------------------------------------------------------------------
