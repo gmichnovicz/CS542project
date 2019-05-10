@@ -32,6 +32,12 @@ Please note that measuring the meaningfulness of our results (accuracy of our al
 | [`male-voice`](https://soundcloud.com/arezoo-sadeghi-923021116/malevoice) | [`cricket`](https://soundcloud.com/nibbly-gobblins/nibbly-goblins-test-track-for) | [`cricket-male-2`](https://soundcloud.com/arezoo-sadeghi-923021116/result-cricket-male-2) |
 | [`night-null`](https://soundcloud.com/arezoo-sadeghi-923021116/night-null)   | [`guitar-null`](https://soundcloud.com/arezoo-sadeghi-923021116/guitar-null) | [`null-music-music`](https://soundcloud.com/arezoo-sadeghi-923021116/result-null-music-music) |
 
+# Figure of result
+
+![Figure 1]
+
+(https://github.com/gmichnovicz/CS542project/blob/master/figures/figure.png)
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
