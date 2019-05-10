@@ -35,7 +35,7 @@ Please note that measuring the meaningfulness of our results (accuracy of our al
 # Figure of result
 
 ![Figure 1]
-(/figures/figure.png)
+(figures/figure.png)
 
 
 ----------------------------------------------------------------------------------------------------------------------------
